@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Technology Enthusiast and Professional Coder | {{ .Title }}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+      integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
+      crossorigin="anonymous"
+    ></script>
+
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩" />
+  </head>
+  <body>
+    <section>
+      <article class="profile">
+        <img
+          class="profile__image"
+          src="https://gravatar.com/avatar/d98cc889d4c62e1242ffd051f2dac76e?s=200"
+          atl=""
+        />
+        <h1>CJ Davis</h1>
+        <h2>Full Stack Developer</h2>
+      </article>
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com/crevax" class="icon-link"
+            ><i class="fab fa-github"></i
+            ><span class="icon-link__text">GitHub Profile</span></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://stackoverflow.com/users/story/1324851"
+            class="icon-link"
+            ><i class="fab fa-stack-overflow"></i
+            ><span class="icon-link__text"
+              >Stack Overflow Developer Story</span
+            ></a
+          >
+        </li>
+        <li>
+          <a
+            href="
+            https://twitter.com/crevax"
+            class="icon-link"
+            ><i class="fab fa-twitter"></i
+            ><span class="icon-link__text">Twitter Profile</span></a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/crevax/" class="icon-link"
+            ><i class="fab fa-linkedin"></i
+            ><span class="icon-link__text">LinkedIn Profile</span></a
+          >
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

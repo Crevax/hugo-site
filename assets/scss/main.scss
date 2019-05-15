@@ -1,0 +1,41 @@
+@import "_branding";
+
+h1,
+p,
+a {
+  color: $primaryFontColor;
+  font-family: $primaryFontFamily;
+}
+
+a {
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile__image {
+  border-radius: 50%;
+}
+
+.icon-link__text {
+  display: none;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    font-size: 40px;
+  }
+}
